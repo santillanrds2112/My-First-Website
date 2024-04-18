@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        body { /* This is the design of the body */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header { /* This is the design for the heder */
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-image{ /* This is the design for the profile image */
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+        }
+        nav { /*This is the design for navigation bar */
+            background-color: #767373;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+        nav a { /* This is for navigation bar design */
+            color: #fff;
+            padding: 10px 10px;
+            margin: 0 10px;
+            font-style: Arial;
+        }
+        nav a:hover { /* This is for hovering */
+            background-color: #555;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px;
+        }
+        .information-item { /* This is for the sections design */
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .message-item{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+        }
+        textarea{
+            width: 50%;
+            height: 250px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body> 
+
+    <!-- This block contains only the header-->
+    <header>
+        <h1>Hi I'm Ralph Dempsey Santillan</h1>
+        <img src="../Profile.jfif" alt="Profile" class="profile-image"/>
+    </header>
+
+    <!-- This block constains only the navigation bar-->
+    <nav>
+        <a href="#About">About</a>
+        <a href="#Hobbies">Hobbies</a>
+        <a href="#Interest">Interest</a>
+    </nav>
+
+    <!-- This block contains the content/informations-->
+    <div class="container">
+        <section id="About" class="information-item">
+            <h2>About</h2>
+            <ul>
+                <li>Marilao, Bulacan
+                <li>Introvert</li>
+            </ul>
+        </section>
+        <section id="Hobbies" class="information-item">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Motorcycle Riding</li>
+                <li>Nature Tripping</li>
+                <li>Playing Games</li>
+            </ul>
+        </section>
+        <section id="Interest" class="information-item">
+            <h2>Interest</h2>
+            <li>Animes and Manga</li>
+        </section>
+    </div>
+
+    <!-- This block contains the text area where user can input message -->
+    <div class="message-item">
+        <label for="message"> Feel free to message me: </label>
+        <textarea id="text" placeholder="Enter message here">Enter Message Here</textarea>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>
+
